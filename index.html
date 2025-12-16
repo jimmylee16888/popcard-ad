@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Pop Card Privacy Policy | 隱私權政策</title>
+  <meta name="description" content="Pop Card Privacy Policy / 隱私權政策" />
+
+  <style>
+    :root{
+      --bg: #ffffff;
+      --fg: #111827;
+      --muted:#6b7280;
+      --card:#f3f4f6;
+      --border:#e5e7eb;
+      --accent:#2563eb;
+      --accent2:#10b981;
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+      --radius: 18px;
+      --max: 980px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b1220;
+        --fg:#e5e7eb;
+        --muted:#9ca3af;
+        --card:#111a2e;
+        --border:#1f2a44;
+        --shadow: 0 12px 35px rgba(0,0,0,.35);
+      }
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background:var(--bg);
+      color:var(--fg);
+      line-height:1.75;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 60px}
+    header{
+      display:flex; gap:16px; align-items:center; justify-content:space-between;
+      margin-bottom:18px;
+    }
+    .brand{
+      display:flex; flex-direction:column; gap:4px;
+    }
+    .brand h1{
+      margin:0;
+      font-size:24px;
+      letter-spacing:.2px;
+    }
+    .brand .sub{
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .langbar{
+      display:flex; gap:10px; align-items:center;
+      flex-wrap:wrap;
+    }
+    .btn{
+      border:1px solid var(--border);
+      background:transparent;
+      color:var(--fg);
+      padding:10px 12px;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:14px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      user-select:none;
+    }
+    .btn.primary{
+      border-color:transparent;
+      background:linear-gradient(135deg, var(--accent), #7c3aed);
+      color:white;
+    }
+    .btn.good{
+      border-color:transparent;
+      background:linear-gradient(135deg, var(--accent2), #22c55e);
+      color:white;
+    }
+    .btn:active{transform:translateY(1px)}
+    .pill{
+      font-family:var(--mono);
+      font-size:12px;
+      color:var(--muted);
+      border:1px dashed var(--border);
+      padding:6px 10px;
+      border-radius:999px;
+    }
+
+    .hero{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      margin:18px 0 22px;
+    }
+    .hero img{
+      width:100%;
+      display:block;
+      aspect-ratio: 2 / 1;
+      object-fit:cover;
+    }
+    .hero .hero-inner{
+      padding:16px 18px;
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .hero .kicker{
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:20px 18px;
+      box-shadow:var(--shadow);
+    }
+
+    h2{
+      margin:22px 0 10px;
+      font-size:18px;
+      letter-spacing:.2px;
+    }
+    h3{
+      margin:16px 0 8px;
+      font-size:16px;
+    }
+    p{margin:10px 0}
+    ul{margin:8px 0 10px 22px}
+    li{margin:6px 0}
+    .muted{color:var(--muted)}
+    .divider{
+      height:1px; background:var(--border);
+      margin:18px 0;
+      opacity:.9;
+    }
+    footer{
+      margin-top:24px;
+      color:var(--muted);
+      font-size:13px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .small{
+      font-size:13px;
+    }
+    .hidden{display:none!important}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1 id="pageTitle">Pop Card 隱私權政策</h1>
+        <div class="sub" id="pageSubtitle">更新日期：2025-09-08</div>
+      </div>
+
+      <div class="langbar">
+        <span class="pill" id="langHint">Language / 語言</span>
+        <button class="btn primary" id="btnZh" type="button" aria-label="切換到中文">中文</button>
+        <button class="btn" id="btnEn" type="button" aria-label="Switch to English">English</button>
+        <button class="btn good" id="btnCopy" type="button">複製本頁網址 / Copy URL</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img
+        src="https://github.com/jimmylee16888/popcard-ad/blob/main/cardview_banner_1200x600.png?raw=true"
+        alt="Pop Card banner"
+        loading="eager"
+      />
+      <div class="hero-inner">
+        <div>
+          <div class="kicker" id="heroKicker">
+            本頁可用於 Google Play Console「Privacy policy URL」提交。
+          </div>
+        </div>
+        <div class="muted small" id="heroNote">
+          若你看到此頁，代表網址可公開存取 ✅
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ZH ===================== -->
+    <main id="contentZh" class="card">
+      <p>歡迎使用 Pop Card（以下稱「本應用程式」、「我們」）。</p>
+      <p>我們非常重視您的隱私與個人資料保護，並致力於依相關隱私法規（包含但不限於 App Store 與 Google Play 之政策）妥善處理您的資料。</p>
+      <p>本隱私權政策說明您在使用本應用程式（包含使用第三方登入服務）時，我們如何蒐集、使用、儲存及保護您的資料。</p>
+
+      <h2>一、我們蒐集的資料類型</h2>
+      <h3>（一）帳號與身分驗證資料（必要）</h3>
+      <p>當您使用本應用程式並選擇以第三方登入服務（如 Google）進行登入時，我們僅會取得完成登入與帳號識別所需的最小必要資訊，包括但不限於：</p>
+      <ul>
+        <li>使用者識別碼（如 Firebase UID 或 Google 使用者 ID）</li>
+        <li>電子郵件地址</li>
+        <li>顯示名稱</li>
+        <li>大頭貼網址（如該服務有提供）</li>
+        <li>身分驗證權杖（ID Token / Access Token，僅用於登入驗證，不會對外公開或另作他用）</li>
+      </ul>
+      <p>上述資料主要由 Firebase Authentication 或相應第三方登入服務安全處理。</p>
+
+      <h3>（二）使用者建立的內容</h3>
+      <p>您在本應用程式中建立、編輯或管理的小卡內容（例如圖片、相簿或收藏資料）主要於您的裝置上處理與儲存。</p>
+      <p>除非您主動使用同步、備份或分享等功能，本應用程式不會自動將您的內容上傳至我們的伺服器或第三方平台。</p>
+
+      <h3>（三）診斷與使用資料（選用）</h3>
+      <p>為提升應用程式穩定性與使用體驗，若您使用的版本啟用診斷或分析服務（例如 Firebase Crashlytics 或 Firebase Analytics），我們可能會蒐集：</p>
+      <ul>
+        <li>去識別化或匿名化的使用紀錄</li>
+        <li>裝置類型、作業系統版本</li>
+        <li>崩潰紀錄與錯誤事件</li>
+      </ul>
+      <p>此類資料僅用於除錯、效能分析與產品改善，不會用於識別個人身分。</p>
+
+      <h2>二、資料使用目的</h2>
+      <p>我們蒐集與使用您的資料，僅限於以下目的：</p>
+      <ul>
+        <li>提供與維持使用者登入與帳號識別功能</li>
+        <li>確保帳號安全性與防止未授權存取</li>
+        <li>載入或同步您的基本個人化設定（如顯示名稱或頭像）</li>
+        <li>改善應用程式穩定度、效能與使用體驗</li>
+        <li>回應使用者支援請求或處理帳號相關問題</li>
+      </ul>
+      <p>我們 <strong>不會</strong> 將您的個人資料用於廣告投放、行銷分析或銷售予第三方。</p>
+
+      <h2>三、資料分享與第三方服務</h2>
+      <p>我們不會出售、出租或以其他方式不當揭露您的個人資料。為提供必要功能，資料可能會與下列第三方服務互動：</p>
+      <ul>
+        <li>Google / Firebase Authentication：用於帳號登入與身分驗證</li>
+        <li>（選用）Firebase Crashlytics / Firebase Analytics：用於診斷與效能分析</li>
+      </ul>
+      <p>上述第三方服務皆依其各自之隱私權政策處理資料。</p>
+
+      <h2>四、資料儲存與保存期間</h2>
+      <ul>
+        <li>帳號識別資料（如 UID、電子郵件）由身分驗證系統（例如 Firebase Authentication）管理</li>
+        <li>（如有啟用）使用者個人化資料可能儲存於雲端資料庫（如 Firestore），以提供跨裝置體驗</li>
+        <li>我們僅於達成資料蒐集目的所需期間內保存您的資料，或依法律要求保存</li>
+      </ul>
+      <p>您可隨時選擇登出或請求刪除帳號。</p>
+
+      <h2>五、您的權利（存取、修正與刪除）</h2>
+      <p>您對於您的個人資料，享有下列權利：</p>
+      <ul>
+        <li>存取或查詢您的個人資料</li>
+        <li>更正不正確或不完整的資料</li>
+        <li>請求刪除帳號與相關資料</li>
+      </ul>
+      <p><strong>刪除方式：</strong></p>
+      <ul>
+        <li>App 內功能：若版本提供「刪除帳號」功能，您可直接操作</li>
+        <li>聯絡我們：請來信至 <a href="mailto:jimmylee16888@gmail.com">jimmylee16888@gmail.com</a></li>
+      </ul>
+      <p>我們將於合理期間內協助刪除您的帳號、身分驗證資料及相關雲端紀錄。</p>
+
+      <h2>六、兒童隱私</h2>
+      <p>本應用程式並非專為 13 歲以下兒童設計。若您為未滿法定年齡兒童之監護人，且認為我們不當蒐集或持有相關資料，請立即與我們聯繫，我們將協助刪除。</p>
+
+      <h2>七、資訊安全</h2>
+      <p>我們採取合理的技術與管理措施保護您的資料，包括但不限於：</p>
+      <ul>
+        <li>使用 HTTPS / TLS 進行資料傳輸加密</li>
+        <li>限制存取權限以降低未授權風險</li>
+        <li>使用受信任的雲端與身分驗證服務</li>
+      </ul>
+      <p class="muted">惟請注意，任何網路傳輸方式均無法保證 100% 安全。</p>
+
+      <h2>八、隱私權政策之變更</h2>
+      <p>我們可能因功能更新、法規要求或營運需要而不定期修訂本政策。更新後之政策將公布於本頁，並以「更新日期」標示。</p>
+
+      <h2>九、聯絡方式</h2>
+      <p>如對本隱私權政策或資料處理方式有任何疑問，歡迎聯絡我們：</p>
+      <p>📧 <a href="mailto:jimmylee16888@gmail.com">jimmylee16888@gmail.com</a></p>
+
+      <div class="divider"></div>
+      <p class="muted small">© 2025 Pop Card</p>
+    </main>
+
+    <!-- ===================== EN ===================== -->
+    <main id="contentEn" class="card hidden">
+      <p>Welcome to Pop Card (the “App”, “we”, “us”).</p>
+      <p>We take your privacy seriously and are committed to handling your data in compliance with applicable privacy laws and platform requirements, including (but not limited to) App Store and Google Play policies.</p>
+      <p>This Privacy Policy explains how we collect, use, store, and protect your information when you use the App, including third-party sign-in services.</p>
+
+      <h2>1. Information We Collect</h2>
+
+      <h3>(1) Account & Authentication Data (Required)</h3>
+      <p>If you sign in using a third-party provider (such as Google), we only obtain the minimum information necessary to complete sign-in and identify your account, including but not limited to:</p>
+      <ul>
+        <li>User identifier (e.g., Firebase UID or Google user ID)</li>
+        <li>Email address</li>
+        <li>Display name</li>
+        <li>Profile photo URL (if provided by the provider)</li>
+        <li>Authentication tokens (ID Token / Access Token) used only for sign-in verification and not shared or used for other purposes</li>
+      </ul>
+      <p>Such data is primarily processed securely by Firebase Authentication or the corresponding third-party sign-in service.</p>
+
+      <h3>(2) User-Generated Content</h3>
+      <p>Content you create, edit, or manage in the App (e.g., card images, albums, and collection data) is primarily processed and stored on your device.</p>
+      <p>Unless you actively use features like sync, backup, or sharing, the App does not automatically upload your content to our servers or third-party platforms.</p>
+
+      <h3>(3) Diagnostics & Usage Data (Optional)</h3>
+      <p>To improve stability and user experience, if diagnostics/analytics services are enabled (e.g., Firebase Crashlytics or Firebase Analytics), we may collect:</p>
+      <ul>
+        <li>De-identified or anonymized usage data</li>
+        <li>Device type and operating system version</li>
+        <li>Crash logs and error events</li>
+      </ul>
+      <p>This data is used only for debugging, performance analysis, and product improvement, and is not used to identify you personally.</p>
+
+      <h2>2. How We Use Your Information</h2>
+      <p>We use your information only for the following purposes:</p>
+      <ul>
+        <li>Providing and maintaining sign-in and account identification</li>
+        <li>Ensuring account security and preventing unauthorized access</li>
+        <li>Loading or syncing basic personalization (e.g., display name or profile photo)</li>
+        <li>Improving stability, performance, and user experience</li>
+        <li>Responding to support requests or account-related issues</li>
+      </ul>
+      <p>We <strong>do not</strong> use your personal data for advertising, marketing profiling, or selling it to third parties.</p>
+
+      <h2>3. Sharing & Third-Party Services</h2>
+      <p>We do not sell, rent, or improperly disclose your personal data. To provide essential features, we may interact with the following third-party services:</p>
+      <ul>
+        <li>Google / Firebase Authentication: account sign-in and identity verification</li>
+        <li>(Optional) Firebase Crashlytics / Firebase Analytics: diagnostics and performance analytics</li>
+      </ul>
+      <p>These third-party services process data in accordance with their own privacy policies.</p>
+
+      <h2>4. Data Storage & Retention</h2>
+      <ul>
+        <li>Account identifiers (e.g., UID, email) are managed by the authentication system (e.g., Firebase Authentication)</li>
+        <li>If enabled, personalization data may be stored in a cloud database (e.g., Firestore) to support cross-device experience</li>
+        <li>We retain data only for as long as necessary to fulfill the purposes described above, or as required by law</li>
+      </ul>
+      <p>You may log out at any time or request account deletion.</p>
+
+      <h2>5. Your Rights (Access, Correction, Deletion)</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access or inquire about your personal data</li>
+        <li>Correct inaccurate or incomplete data</li>
+        <li>Request deletion of your account and related data</li>
+      </ul>
+      <p><strong>How to request deletion:</strong></p>
+      <ul>
+        <li>In-app feature: if your version provides a “Delete account” option, you may use it directly</li>
+        <li>Contact us by email: <a href="mailto:jimmylee16888@gmail.com">jimmylee16888@gmail.com</a></li>
+      </ul>
+      <p>We will assist with deleting your account, authentication records, and related cloud data within a reasonable timeframe.</p>
+
+      <h2>6. Children’s Privacy</h2>
+      <p>The App is not designed for children under 13. If you are a parent/guardian and believe we have improperly collected or retained a child’s data, please contact us and we will assist with deletion.</p>
+
+      <h2>7. Security</h2>
+      <p>We take reasonable technical and organizational measures to protect your data, including:</p>
+      <ul>
+        <li>Encrypting data in transit using HTTPS / TLS</li>
+        <li>Restricting access to reduce unauthorized risk</li>
+        <li>Using trusted cloud and authentication services</li>
+      </ul>
+      <p class="muted">However, no method of transmission over the Internet is 100% secure.</p>
+
+      <h2>8. Changes to This Policy</h2>
+      <p>We may update this policy from time to time due to feature updates, legal requirements, or operational needs. The updated policy will be published on this page with the “Last updated” date.</p>
+
+      <h2>9. Contact</h2>
+      <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+      <p>📧 <a href="mailto:jimmylee16888@gmail.com">jimmylee16888@gmail.com</a></p>
+
+      <div class="divider"></div>
+      <p class="muted small">© 2025 Pop Card</p>
+    </main>
+
+    <footer>
+      <div class="small" id="footerLeft">Pop Card Privacy Policy</div>
+      <div class="small muted" id="footerRight">Public page for Google Play Console submission</div>
+    </footer>
+  </div>
+
+  <script>
+    const btnZh = document.getElementById('btnZh');
+    const btnEn = document.getElementById('btnEn');
+    const btnCopy = document.getElementById('btnCopy');
+
+    const contentZh = document.getElementById('contentZh');
+    const contentEn = document.getElementById('contentEn');
+
+    const pageTitle = document.getElementById('pageTitle');
+    const pageSubtitle = document.getElementById('pageSubtitle');
+    const heroKicker = document.getElementById('heroKicker');
+    const heroNote = document.getElementById('heroNote');
+    const footerLeft = document.getElementById('footerLeft');
+    const footerRight = document.getElementById('footerRight');
+
+    function setLang(lang){
+      const isZh = lang === 'zh';
+      contentZh.classList.toggle('hidden', !isZh);
+      contentEn.classList.toggle('hidden', isZh);
+
+      // button styles
+      btnZh.classList.toggle('primary', isZh);
+      btnEn.classList.toggle('primary', !isZh);
+
+      // labels
+      document.documentElement.lang = isZh ? 'zh-Hant' : 'en';
+      document.title = isZh ? 'Pop Card 隱私權政策' : 'Pop Card Privacy Policy';
+
+      pageTitle.textContent = isZh ? 'Pop Card 隱私權政策' : 'Pop Card Privacy Policy';
+      pageSubtitle.textContent = isZh ? '更新日期：2025-09-08' : 'Last updated: 2025-09-08';
+
+      heroKicker.textContent = isZh
+        ? '本頁可用於 Google Play Console「Privacy policy URL」提交。'
+        : 'This page can be used for the Google Play Console “Privacy policy URL”.';
+
+      heroNote.textContent = isZh
+        ? '若你看到此頁，代表網址可公開存取 ✅'
+        : 'If you can see this page, the URL is publicly accessible ✅';
+
+      footerLeft.textContent = isZh ? 'Pop Card 隱私權政策' : 'Pop Card Privacy Policy';
+      footerRight.textContent = isZh
+        ? '提供給 Google Play Console 的公開頁面'
+        : 'Public page for Google Play Console submission';
+
+      // keep language in URL for sharing
+      const url = new URL(window.location.href);
+      url.searchParams.set('lang', isZh ? 'zh' : 'en');
+      window.history.replaceState({}, '', url.toString());
+    }
+
+    // init from query or browser language
+    const qp = new URLSearchParams(window.location.search);
+    const initLang = qp.get('lang') ||
+      (navigator.language && navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en');
+    setLang(initLang === 'en' ? 'en' : 'zh');
+
+    btnZh.addEventListener('click', () => setLang('zh'));
+    btnEn.addEventListener('click', () => setLang('en'));
+
+    btnCopy.addEventListener('click', async () => {
+      const url = window.location.href;
+      try{
+        await navigator.clipboard.writeText(url);
+        btnCopy.textContent = (document.documentElement.lang === 'zh-Hant')
+          ? '已複製 ✅'
+          : 'Copied ✅';
+        setTimeout(() => {
+          btnCopy.textContent = (document.documentElement.lang === 'zh-Hant')
+            ? '複製本頁網址 / Copy URL'
+            : 'Copy URL / 複製本頁網址';
+        }, 1200);
+      }catch(e){
+        prompt('Copy this URL:', url);
+      }
+    });
+  </script>
+</body>
+</html>
